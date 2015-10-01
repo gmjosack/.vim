@@ -31,6 +31,10 @@ nmap <silent> <A-Down> :wincmd j<CR>
 nmap <silent> <A-Left> :wincmd h<CR>
 nmap <silent> <A-Right> :wincmd l<CR>
 
+" Cycle between buffers
+nmap <silent> <A-PageDown> :bnext<CR>
+nmap <silent> <A-PageUp> :bprevious<CR>
+
 " Makes the :Explore a bit more like nerdtree
 let g:netrw_preview   = 1
 let g:netrw_liststyle = 3

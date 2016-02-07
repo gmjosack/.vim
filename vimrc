@@ -46,3 +46,5 @@ let g:airline_powerline_fonts=1
 let g:airline_theme = 'wombat'
 
 let g:go_fmt_autosave = 0
+
+let g:jsx_ext_required = 0

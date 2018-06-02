@@ -37,3 +37,6 @@
 [submodule "bundle/riv.vim"]
 	path = bundle/riv.vim
 	url = https://github.com/Rykka/riv.vim.git
+[submodule "bundle/vim-elixir"]
+	path = bundle/vim-elixir
+	url = https://github.com/elixir-lang/vim-elixir.git

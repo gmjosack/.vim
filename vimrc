@@ -22,8 +22,10 @@ augroup markdown
 augroup END
 
 " Files that want tabs
-autocmd FileType make setlocal noexpandtab
-autocmd FileType go setlocal noexpandtab
+autocmd FileType make   setlocal noexpandtab
+autocmd FileType go     setlocal noexpandtab
+autocmd Filetype elixir setlocal expandtab tabstop=2 shiftwidth=2 softtabstop=2
+
 
 " Allow Alt+Arrows to select windows
 nmap <silent> <A-Up> :wincmd k<CR>

@@ -10,8 +10,13 @@ set expandtab
 set t_Co=256
 set hidden
 
+set belloff=all
+
 silent !mkdir -p ~/.vim_swp
 set directory=$HOME/.vim_swp
+
+set tags=./tags;/
+nnoremap <C-]> g<C-]>
 
 au BufRead,BufNewFile */nginx/config/*.conf set filetype=nginx
 au BufRead,BufNewFile */nginx/config/conf/*.conf set filetype=nginx
@@ -25,6 +30,7 @@ augroup END
 autocmd FileType make   setlocal noexpandtab
 autocmd FileType go     setlocal noexpandtab
 autocmd Filetype elixir setlocal expandtab tabstop=2 shiftwidth=2 softtabstop=2
+autocmd Filetype javascript setlocal expandtab tabstop=2 shiftwidth=2 softtabstop=2
 
 
 " Allow Alt+Arrows to select windows

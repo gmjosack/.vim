@@ -14,3 +14,16 @@ ln -s .vim/vimrc .vimrc
 cd .vim
 git submodule update --init --recursive
 ```
+
+## Pulling Latest Submodules
+```shell
+git submodule update --init --recursive --remote
+```
+
+## Removing a submodule
+
+```shell
+git submodule deinit -f -- bundle/$NAME
+rm -rf .git/modules/bundle/$NAME
+rm -rf bundle/$NAME
+```
